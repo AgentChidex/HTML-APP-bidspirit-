@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>Bid Spirit</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" href="css/style.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- fevicon -->
+      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+	  
+
+	  
+   </head>
+   <!-- body -->
+   <body class="main-layout" onload="getUser();" >
+      <!-- Spinning loader  -->
+      <div class="loader_bg">
+         <div class="loader"><img src="images/loading.gif" alt="#" /></div>
+      </div>
+      <!-- end loader -->
+      <!-- header -->
+      <header>
+         <!-- header inner -->
+         <div class="header">
+            <div class="container-fluid">
+               <div class="row">
+                  <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                     <div class="full">
+                        <div class="center-desk">
+                           <div class="logo">
+                              <a href="index.html"><img src="images/logo.png" alt="#" /></a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                     <nav class="navigation navbar navbar-expand-md navbar-dark ">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarsExample04">
+                           <ul class="navbar-nav mr-auto">
+                              <li class="nav-item active">
+                                 <a class="nav-link" href="index.html">Home</a>
+                              </li>							
+							  <li class="nav-item">
+                                 <a class="nav-link" href="#antiques">Antiques</a>
+                              </li>
+							  <li class="nav-item">
+                                 <a class="nav-link" href="#furniture">Furniture</a>
+                              </li>
+							  <li class="nav-item">
+                                 <a class="nav-link" href="#collectibles">Collectibles</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="about.html">About</a>
+                              </li>
+                      
+                              <li class="nav-item">
+                                 <a class="nav-link" href="contact.html">Contact Us</a>
+                              </li>
+							    <li class="nav-item">
+                                <h2 style="color:red;" id="visitor" >Welcome : </h2>
+                              </li>
+                           
+                 
+                              <li class="nav-item d_none sea_icon">
+                                 <a class="nav-link" href="#"><i class="fa fa-shopping-bag" aria-hidden="true"></i><i class="fa fa-search" aria-hidden="true"></i></a>
+                              </li>
+                           </ul>
+                        </div>
+                     </nav>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+      <!-- end header inner -->
+      <!-- end header -->
+      <!-- banner -->
+      <section class="banner_main">
+         <div id="banner1" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+               <li data-target="#banner1" data-slide-to="0" class="active"></li>
+               <li data-target="#banner1" data-slide-to="1"></li>
+               <li data-target="#banner1" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+               <div class="carousel-item active">
+                  <div class="container">
+                     <div class="carousel-caption">
+                        <div class="text-bg" width="100%" height="300px"  >
+                           <h1> <span class="blu">BidSpirit  <br></span>Antiques</h1>
+                           <figure><img src="images/slider/ant5.png"  width="100%" height="300px" alt="#"/></figure>
+                           <a class="read_more" href="#">Shop Now</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="carousel-item">
+                  <div class="container">
+                     <div class="carousel-caption">
+                        <div class="text-bg" width="100%" height="300px"  >
+                             <h1> <span class="blu">BidSpirit  <br></span>Collectibles</h1>
+                           <figure><img src="images/slider/coll1.png"   width="100%" height="300px" alt="#"/></figure>
+                           <a class="read_more" href="#">Shop Now</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="carousel-item">
+                  <div class="container">
+                     <div class="carousel-caption">
+                        <div class="text-bg" width="100%" height="300px"  >
+                             <h1> <span class="blu">BidSpirit  <br></span>Furniture</h1>
+                           <figure><img src="images/slider/furn1.png"  width="100%" height="300px" alt="#"/></figure>
+                           <a class="read_more" href="#">Shop Now</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <a class="carousel-control-prev" href="#banner1" role="button" data-slide="prev">
+            <i class="fa fa-arrow-left" aria-hidden="true"></i>
+            </a>
+            <a class="carousel-control-next" href="#banner1" role="button" data-slide="next">
+            <i class="fa fa-arrow-right" aria-hidden="true"></i>
+            </a>
+         </div>
+      </section>
+      <!-- end banner -->
+      <!-- about section -->
+      <div class="about">
+         <div class="container">
+            <div class="row d_flex">
+               <div class="col-md-5">
+                  <div class="about_img">
+                     <figure><img src="images/products/furniture/furn1.webp" alt="#"/></figure>
+                  </div>
+               </div>
+               <div class="col-md-7">
+                  <div class="titlepage">
+                     <h2>Featured Product</h2>
+                     <p>The Legends No. 125 , the Finest German crafted Antique , a symbol of historic craftmanship, the grand expression of a lifestyle reserves on for a few.</p>
+                  </div>
+                  <a class="read_more" href="view-products/legend125.html">View Product</a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- about section -->
+      <!-- Our  Glasses section -->
+      <div class="glasses">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-10 offset-md-1">
+                  <div class="titlepage">
+                     <h2 id="antiques" >Antiques</h2>
+                     <p>Our Antiques are of High Value , because of Age And Quality
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                  <div class="glasses_box" onclick="purchase();" >
+                     <figure><img src="images/products/antiques/ant1.png"  alt="#"/></figure><p>
+                     <h3><span class="blu">$</span>5000000</h3>
+                     <p>Ancient Roman Pot</p>
+                  </div>
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                  <div class="glasses_box"  onclick="purchase();">
+                     <figure><img src="images/products/antiques/ant2.png" alt="#"/></figure>
+                     <h3><span class="blu">$</span>70000</h3>
+                     <p>Swedish Wall Clock</p>
+                  </div>
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                    <div class="glasses_box" onclick="purchase();" >
+                     <figure><img src="images/products/antiques/ant3.png"  alt="#"/></figure><p>
+                     <h3><span class="blu">$</span>16000000</h3>
+                     <p>Jar From Ancient Mumbai</p>
+                  </div>
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                   <div class="glasses_box" onclick="purchase();" >
+                     <figure><img src="images/products/antiques/ant4.png"  alt="#"/></figure><p>
+                     <h3><span class="blu">$</span>2000000</h3>
+                     <p>Pot of Seph Holderberg</p>
+                  </div>
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                    <div class="glasses_box" onclick="purchase();" >
+                     <figure><img src="images/products/antiques/ant5.png"  alt="#"/></figure><p>
+                     <h3><span class="blu">$</span>1500000</h3>
+                     <p>Twin Jars from 100 AD</p>
+                  </div>
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                   <div class="glasses_box" onclick="purchase();" >
+                     <figure><img src="images/products/antiques/ant6.png"  alt="#"/></figure><p>
+                     <h3><span class="blu">$</span>700000</h3>
+                     <p>Elephant Artifact</p>
+                  </div>
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                  <div class="glasses_box" onclick="purchase();" >
+                     <figure><img src="images/products/antiques/ant7.png"  alt="#"/></figure><p>
+                     <h3><span class="blu">$</span>6000000</h3>
+                     <p>Australian Rare Gold Clock</p>
+                  </div>
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                 <div class="glasses_box" onclick="purchase();" >
+                     <figure><img src="images/products/antiques/ant8.png"  alt="#"/></figure><p>
+                     <h3><span class="blu">$</span>900</h3>
+                     <p>Pixar Wall Clock</p>
+                  </div>
+               </div>
+      
+            </div>
+         </div>
+      </div>
+	  
+	  
+	  
+	  <div class="glasses">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-10 offset-md-1">
+                  <div class="titlepage">
+                     <h2 id="collectibles" >Collectibles</h2>
+                     <p>Our Rare Selection of Collectibles
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                  <div class="glasses_box" onclick="purchase();" >
+                     <figure><img src="images/products/collectibles/coll1.png"  alt="#"/></figure><p>
+                     <h3><span class="blu">$</span>550000</h3>
+                     <p>Spider-Verse Collectible</p>
+                  </div>
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                  <div class="glasses_box"  onclick="purchase();">
+                      <figure><img src="images/products/collectibles/coll2.png"  alt="#"/></figure><p>
+                     <h3><span class="blu">$</span>460000</h3>
+                     <p>Falcon-Artistic Collectible</p>
+                  </div>
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                    <div class="glasses_box" onclick="purchase();" >
+                      <figure><img src="images/products/collectibles/coll5.png"  alt="#"/></figure><p>
+                     <h3><span class="blu">$</span>5000000</h3>
+                    <p>American Coin collectible</p>
+                  </div>
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                   <div class="glasses_box" onclick="purchase();" >
+                    <figure><img src="images/products/collectibles/coll4.png"  alt="#"/></figure><p>
+                     <h3><span class="blu">$</span>2000000</h3>
+                     <p>Rare Unicorn Collectible</p>
+                  </div>
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                    <div class="glasses_box" onclick="purchase();" >
+                     <figure><img src="images/products/collectibles/coll3.png"  alt="#"/></figure><p>
+                     <h3><span class="blu">$</span>1000</h3>
+                     <p>American Coin collectible</p>
+                  </div>
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                   <div class="glasses_box" onclick="purchase();" >
+                     <figure><img src="images/products/collectibles/coll6.png"  alt="#"/></figure><p>
+                     <h3><span class="blu">$</span>8900000</h3>
+                        <p>West Kolkota Collectible Jewelery</p>
+                  </div>
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                  <div class="glasses_box" onclick="purchase();" >
+                      <figure><img src="images/products/collectibles/coll7.png"  alt="#"/></figure><p>
+                     <h3><span class="blu">$</span>600000</h3>
+                     <p>Autographed Ball by Michael Jordan</p>
+                  </div>
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                 <div class="glasses_box" onclick="purchase();" >
+                    <figure><img src="images/products/collectibles/coll8.png"  alt="#"/></figure><p>
+                     <h3><span class="blu">$</span>900000</h3>
+                     <p>1908 Liberty Coin</p>
+                  </div>
+               </div>
+      
+            </div>
+         </div>
+      </div>
+	  
+	  
+	  
+	  
+	  
+	     <div class="glasses">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-10 offset-md-1">
+                  <div class="titlepage">
+                     <h2 id="furniture" >Furniture</h2>
+                     <p>Best Furniture Available in Our MarketPlace , It doesnt get better than our furniture Selection
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                  <div class="glasses_box" onclick="purchase();" >
+                     <figure><img src="images/products/furniture/furn1.png"  alt="#"/></figure><p>
+                     <h3><span class="blu">$</span>550000</h3>
+                     <p>Garden Chair - Gold Plated</p>
+                  </div>
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                  <div class="glasses_box"  onclick="purchase();">
+                     <figure><img src="images/products/furniture/furn2.png" alt="#"/></figure>
+                     <h3><span class="blu">$</span>460000</h3>
+                     <p>Full Cusioned Medieval Chair</p>
+                  </div>
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                    <div class="glasses_box" onclick="purchase();" >
+                     <figure><img src="images/products/furniture/furn3.png"  alt="#"/></figure><p>
+                     <h3><span class="blu">$</span>500000</h3>
+                     <p>Antique Rest Arm 7</p>
+                  </div>
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                   <div class="glasses_box" onclick="purchase();" >
+                     <figure><img src="images/products/furniture/furn4.png"  alt="#"/></figure><p>
+                     <h3><span class="blu">$</span>200000</h3>
+                     <p>Antique Chair</p>
+                  </div>
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                    <div class="glasses_box" onclick="purchase();" >
+                     <figure><img src="images/products/furniture/furn5.png"  alt="#"/></figure><p>
+                     <h3><span class="blu">$</span>1000000</h3>
+                     <p>Jackal Back Antique Chair</p>
+                  </div>
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                   <div class="glasses_box" onclick="purchase();" >
+                     <figure><img src="images/products/furniture/furn6.png"  alt="#"/></figure><p>
+                     <h3><span class="blu">$</span>700000</h3>
+                     <p>White Moon design</p>
+                  </div>
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                  <div class="glasses_box" onclick="purchase();" >
+                     <figure><img src="images/products/furniture/furn7.png"  alt="#"/></figure><p>
+                     <h3><span class="blu">$</span>600000</h3>
+                     <p>Indian Origin Antique Furniture</p>
+                  </div>
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                 <div class="glasses_box" onclick="purchase();" >
+                     <figure><img src="images/products/furniture/furn8.png"  alt="#"/></figure><p>
+                     <h3><span class="blu">$</span>900000</h3>
+                     <p>Bengal White Chair</p>
+                  </div>
+               </div>
+      
+            </div>
+         </div>
+      </div>
+      <!-- end Our  Glasses section -->
+      <!-- Our shop section -->
+      <div id="about" class="shop">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-md-5">
+                  <div  class="shop_img">
+                     <figure><img src="images/prod.png" alt="#"/></figure>
+                  </div>
+               </div>
+               <div class="col-md-7 padding_right0">
+                  <div class="max_width">
+                     <div class="titlepage">
+                        <h2>About Bidspirit</h2>
+                        <p>This vase is the world’s most expensive antique.
+It’s very old and said that it returns back to the 17th century,
+The vase was exhibited to be sold at an auction by a family in United Kingdom in 2010.
+Finally this beautiful Chinese vase was sold for $80.2 million</p>
+                        <a class="read_more" href="#collectibles">View Our Collectibles</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end Our shop section -->
+      <!-- clients section -->
+      <div class="clients">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2>What our former Buyers Say</h2>
+                     <p>probably of Kerman origin, and had belonged to the Clark Collection.
+Pre-auction estimate of this rug was $5 to $7 million but all estimates were shattered and
+it was finally sold at $33.76 million</p>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-12">
+                  <div id="myCarousel" class="carousel slide clients_Carousel " data-ride="carousel">
+                     <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                     </ol>
+                     <div class="carousel-inner">
+                        <div class="carousel-item active">
+                           <div class="container">
+                              <div class="carousel-caption ">
+                                 <div class="row">
+                                    <div class="col-md-12">
+                                       <div class="clients_box">
+                                          <figure><img src="images/our.png" alt="#"/></figure>
+                                         <h2>What our former Buyers Say</h2>
+                                          <p>probably of Kerman origin, and had belonged to the Clark Collection.
+Pre-auction estimate of this rug was $5 to $7 million but all estimates were shattered and
+it was finally sold at $33.76 million</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="carousel-item">
+                           <div class="container">
+                              <div class="carousel-caption">
+                                 <div class="row">
+                                    <div class="col-md-12">
+                                       <div class="clients_box">
+                                          <figure><img src="images/our.png" alt="#"/></figure>
+                                          <h2>What our former Buyers Say</h2>
+                                          <p>Most of the antiques were back in 1932 which is now very rare.
+In 1999 it was sold for $11 million but in 2014 this rare pocket watch
+broke it’s previous record and sold for $24 million.</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="carousel-item">
+                           <div class="container">
+                              <div class="carousel-caption">
+                                 <div class="row">
+                                    <div class="col-md-12">
+                                       <div class="clients_box">
+                                          <figure><img src="images/our.png" alt="#"/></figure>
+                                        <h2>What our former Buyers Say</h2>
+                                          <p>It doesnt get better than bidspirit , Sales of Collectibles , antiques, furniture and Rare Items</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                     <i class='fa fa-angle-left'></i>
+                     </a>
+                     <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                     <i class='fa fa-angle-right'></i>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end clients section -->
+      <!-- contact section -->
+      <div id="contact" class="contact">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-6">
+                  <form id="request" class="main_form">
+                     <div class="row">
+                        <div class="col-md-12 ">
+                           <h3>Feedback Form</h3>
+                        </div>
+                        <div class="col-md-12 ">
+                           <input class="contactus" placeholder="Name" type="type" name="Name"> 
+                        </div>
+                        <div class="col-md-12">
+                           <input class="contactus" placeholder="Phone Number" type="type" name="Phone Number"> 
+                        </div>
+                        <div class="col-md-12">
+                           <input class="contactus" placeholder="Email" type="type" name="Email">                          
+                        </div>
+                        <div class="col-md-12">
+                           <input class="contactusmess" placeholder="Message" type="type" Message="Name">
+                        </div>
+                        <div class="col-md-12">
+                           <button class="send_btn">Send</button>
+                        </div>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+         <div class="container-fluid">
+            <div class="map_section">
+               <div id="map">
+               </div>
+            </div>
+         </div>
+      </div>
+      </div>
+	  
+	  <h2 style="align:center">Locate Us</h2>
+	  	  	  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1969.94374100302!2d7.469233256069766!3d9.074014293489693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e0ae34dea5315%3A0x1120f3b3bb14b6f2!2s24%20Aminu%20Kano%20Cres%2C%20Wuse%202%20904101%2C%20Abuja!5e0!3m2!1sen!2sng!4v1667817665648!5m2!1sen!2sng" width="100%" height="500px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+      <!-- end contact section -->
+      <!--  footer -->
+      <footer>
+         <div class="footer">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-8 offset-md-2">
+                     <ul class="location_icon">
+                        <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i></a><br> Location</li>
+                        <li><a href="#"><i class="fa fa-phone" aria-hidden="true"></i></a><br> +01 1234567890</li>
+                        <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a><br> demo@gmail.com</li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <div class="copyright">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-md-12">
+                        <p>© 2019 All Rights Reserved. Design by<a href="https://html.design/"> Free Html Templates</a></p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+	  
+
+	  
+      <!-- end footer -->
+      <!-- Javascript files-->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <!-- sidebar -->
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/custom.js"></script>
+
+      <!-- google map js -->
+
+   <script src="js/sweetalert2.min.js"></script>
+ 
+	  <script>
+	  
+	  function getUser(){
+
+Swal.fire({
+    title: "Welcome To Bid Spirit!",
+    text: "Visitor's Name please : ",
+    input: 'text',
+    showCancelButton: true        
+}).then((result) => {
+    if (result.value) {
+        document.getElementById('visitor').innerHTML="Welcome : " + result.value;
+    }
+});
+
+
+
+}
+
+
+	  
+	  function purchase(){
+	  Swal.fire('Success!' , 'Item Purchase Successful','success');
+	  
+	  
+	  }
+	  
+	  </script>
+   </body>
+</html>
+
